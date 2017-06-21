@@ -1,0 +1,246 @@
+@media(min-width:640px){
+    #header_pc{display:block;}
+    #header_mobile{display:none;}
+}
+@media(max-width:1200px){
+    
+    .prod{
+    flex:1;
+    min-width:25%;
+    text-align: center;
+}
+        #jump_nav ul{
+    width: 100%;
+/*    margin: 0px auto;*/
+} 
+}
+
+@media(max-width:1024px){
+    
+    .prod{
+    flex:1;
+    min-width:30%;
+    text-align: center;
+}
+    .brand_images{
+    display:flex;
+    height: 200px;
+}
+    header .container{
+        width: 95%;
+    }
+    .offers .text h2{
+        font-size: 24px;
+        margin:inherit 10px;
+    }
+    .banner figure{
+        height: 250px;
+    }
+    
+    
+    
+    
+    
+    
+    #jump_nav ul{
+        position: fixed;
+        height:10px;
+        top:0px;
+        left:0px;
+        transform:translateX(-95%);
+    }
+    #jump_nav ul li a{
+    color: black;}
+    #jump_nav ul li{
+        background-color: white;
+    display:block;
+/*        max-width: 150px;*/
+/*    text-align: center;*/
+    }
+    #jump_nav ul:hover{
+        display: block;
+        transform: translateX(0%);
+    }
+    #jump_nav ul li:after
+    {display: none;}
+    
+    
+}
+
+@media(max-width:900px){
+    
+    .prod{
+    flex:1;
+    min-width:36%;
+    text-align: center;
+}
+    .text h2{
+        font-size:22px;
+        margin: 0px 5px;
+    }
+    
+    
+}
+
+@media(max-width:767px){
+    
+    header .container{width: 100%;}
+    .content{
+    display: flex;
+    min-height: 350px;
+    margin:20px 10px;
+    flex-direction: column;
+    background-color:white;
+    box-shadow: 2px 2px 10px #666;
+    }
+    .offers{ 
+        height:100px; 
+        background-image:url(../images/bg_product_header.jpg);
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+        background-position: center;
+    }
+    .offers .viewall{
+        font-size: 15px;
+    }
+    
+    .offers .text{flex-direction: row;
+/*        align-content: flex-start;*/
+    }
+    .offers .text h2{
+    font-size:20px;
+    margin:0px 5px; 
+    text-align:left;
+    font-weight:500;
+     }
+
+    .prod{
+    flex:1;
+        box-sizing: border-box;
+    min-width:50%;
+        background-color: white;
+    text-align: center;
+}
+/*    .prod images:hover{transform: none;}*/
+    .prod:nth-child(n+5)
+    {display: none;}
+    
+    .products span{
+    color: forestgreen;
+/*    display: none;*/
+}
+ .products img{
+   max-width:140px;
+   margin:auto;
+   transition: 0.5s;
+   max-height:140px;
+}
+    
+   .prod_box .description{
+    flex: 2;
+    line-height: 25px;
+    font-size: 13px;
+}    
+    .prod_box .images{
+    flex: 5;
+    display: flex;
+        min-height: 160px;
+}
+    
+    .prod:nth-child(odd)
+    {
+        border-right:1px solid #d0d3d4;
+    }
+    .prod:nth-child(n+1){
+        border-bottom:1px solid #d0d3d4;
+    }
+    
+    .products{
+    margin: 5px 5px -5px;
+    box-shadow: 2px 2px  5px #666;
+/*    border: 5px solid royalblue;*/
+    flex-wrap:wrap;
+    display:flex;
+    max-height:200%;    
+    overflow:hidden;
+    }
+    .feat_brands h2{
+    margin: 10px 5px;
+    margin-left:15px; 
+    font-size: 15px
+     }
+    .brand_images{
+      display:flex;
+      height:150px;
+    }
+    .banner figure{
+        height: 150px;
+    }
+}
+
+
+@media(max-width:640px){
+    #header_mobile{display: block;}
+    #header_pc{display: none;}
+    .banner figure{margin-top:175px;}
+}
+
+
+@media(max-width:480px){
+    .viewall{flex: 4;}
+    .brand_images div{
+    min-width: 40%;
+}
+    .brand_images{
+      display:flex;
+      height:120px;
+    }
+    .offers .viewall{padding:5px;
+    font-size: 14px;}
+    
+}
+
+
+@media(max-width:360px){
+ .prod{
+    flex:1;
+    box-sizing: border-box;
+    min-width:100%;
+    text-align:center;
+}
+    .offers .text{display: none;}
+    .products img{
+   max-width:140px;
+   margin:auto;
+   transition: 0.5s;
+   max-height:140px;
+}
+    .prod_box .images{
+    flex: 5;
+    display: flex;
+        min-height: 160px;
+}
+    
+    .products{
+    flex-wrap:wrap;
+    display:flex;
+    max-height:200%;    
+    overflow:hidden;
+    }
+    
+    .feat_brands h2{
+    margin: 10px 5px;
+    margin-left: 15px; 
+    font-size: 15px
+}
+    .brand_images div{
+    margin:5px;
+    }
+    .brand_images{
+    display:flex;
+    height: 100px;
+}
+    .banner figure{
+        height: 100px;
+    }
+}

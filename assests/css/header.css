@@ -1,0 +1,292 @@
+body {
+    margin:0px;
+    padding: 0px;
+/*    max-width:1400px;*/
+    font-family:Roboto,Arial,sans-serif;
+    letter-spacing:0;
+    background-color: #F3F3F3;
+}
+
+header .container{
+    width: 90%;
+}
+.container{
+/*    width: 90%;*/
+    max-width:1700px;
+    margin:0px auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+header{
+    background-color:#2874F0;
+    top:0px;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header a{
+    color: #E9ECF0;
+    text-decoration: none;
+    display: block;
+    width: inherit;
+    height: inherit;
+    padding: auto;
+}
+#header_pc ul{
+   list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#top_nav ul li{
+    display: inline-block; 
+    font-size:12px;
+    margin: 0px 8px;
+    padding: 10px 0px 2px;
+    font-weight:100;
+}
+
+#top_nav ul{
+    text-align: right;
+}
+
+#main_nav{
+    display:flex;
+    margin:10px 0px 0px;
+/*    justify-content: space-around;*/
+}
+
+.logo{
+    flex:1.3;
+/*    margin-right: 10px;*/
+}
+
+.logo img {
+    width: 100%;
+}
+
+.search_box {
+    flex:8;
+    margin: 1px 11px 0px;
+    box-shadow: 2px 4px 8px #2264D0;
+}
+
+
+.search_box input[type="text"]{
+    width: 93%;
+    min-height:40px;
+    max-height: 60px;
+    font-size: 14.5px;
+    border: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-radius: 2px 0px 0px 2px;
+}
+.search_box input[type="submit"]{
+border-radius: 0px 2px 2px 0px;
+
+}
+
+#search_button {
+    width: 7%;
+    display: inline-block;
+    background-color:#FFE11B;
+    height:40px;
+    float: right;
+    border: none;
+    background-image: url(http://fivelittlezombiesandfred.com/wp-content/uploads/black-search-icon-transparent-background.png);
+    background-size: 30% 40%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.cart {
+    flex: 1;
+    font-size: 14px;
+    font-weight:600;
+    background-color:#2469D9;
+    text-align: center;
+    border-radius:2px;
+    text-transform: uppercase;
+    padding: 10px 0px 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+}
+
+.cart #cart_number{   
+    padding: 2px 6px;
+    background-color:#205EC3;
+}
+
+.cart #cart_font{
+    font-size: 20px;
+    margin-right:2px;
+}
+
+
+
+#jump_nav {
+    margin: 15px 0px 5px;
+}
+#jump_nav ul{
+    width: 90%;
+    margin: 0px auto;
+/*    text-align: center;*/
+}
+#jump_nav ul li{
+/*    margin-right:10px;*/
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    display: inline-flex;
+/*    text-align: left;*/
+}
+#jump_nav ul li a{
+    padding:5px 10px; 
+}
+#jump_nav ul li:hover a{
+    color: yellow;
+}
+#jump_nav ul li:after{
+    content:"";
+    width: 0px;
+    height:0px;
+/*    margin:5px 0px 5px;*/
+    margin:auto 0px;
+    display:flex;
+    border-top: 4px solid white;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left:4px solid transparent;
+}
+
+
+#jump_nav .coloumn ul li{
+    display: block;
+    padding: 10px 0px 5px;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    font-weight:100;
+}
+/*first header of coloumns selector ask
+#jump_nav .coloumnh4{
+    margin: 10px 0px 0px;
+} 
+*/
+
+#jump_nav .coloumn h4{
+    display: block;
+    padding-left: 20px;
+    margin: 10px 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.dropdown .coloumn:nth-child(even) {
+    background-color: #F9F9F9;
+}
+.dropdown .coloumn:nth-child(odd){
+    background-color: white;
+}
+
+#jump_nav ul {
+    position: relative;
+}
+
+.dropdown {
+    position:absolute;
+    width: 100%;
+    top: 31px;
+    box-shadow:-2px 2px 10px lightgrey;
+    display: none;
+}
+
+.five-col{
+   display:flex;
+    z-index: 20;
+}
+.coloumn { 
+    flex: 1;
+    display:block;
+}
+
+#jump_nav ul li:hover .dropdown {
+    display:block;
+}
+
+
+
+/*header -mobile css*/
+
+#header_mobile .fa{
+    font-size:26px;
+    margin:10px 10px;
+}
+#header_mobile span{
+    font-size: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+#header_mobile .main_nav_list{
+    display: flex;
+    margin-bottom: 15px;
+}
+#header_mobile a{width: 100%;
+height: 100%;}
+.nav_list,.main_nav_list div{flex: 1;}
+
+#header_mobile .categories{
+    display: flex;
+}
+.jump_cat{
+    text-align: center;
+}
+#header_mobile .logo{
+    flex:7;
+    margin-left: 20px;
+    max-height:30px;
+}
+#header_mobile img{
+    margin-top: 10px;
+    width:100%;
+    max-width:120px;
+    height:100%;
+    
+}
+.search_box_mobile form{
+    height: 45px;
+display: flex;
+margin:5px 10px 0px;
+}
+#header_mobile input[type="text"]{
+    flex: 11;
+    border-top-right-radius:2px;
+    border:none;
+    border-bottom-right-radius:2px;
+}
+#header_mobile input[type="submit"]{
+   flex:2;
+    background-color: white;
+    height:100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+
+#header_mobile .categories .jump_cat{
+    flex:1;
+    display:inline-flex;
+}
+
+
+
+
